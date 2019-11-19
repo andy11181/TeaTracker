@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".toAddActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/MilkTea"
+            android:layout_width="252dp"
+            android:layout_height="121dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape"
+            android:fontFamily="sans-serif"
+            android:onClick="milkTea"
+            android:text="Milk Tea"
+            android:layout_alignBottom="@id/TaroTea"
+            android:layout_marginBottom="151dp"
+            android:textSize="36sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/TaroTea"
+            android:layout_width="252dp"
+            android:layout_height="121dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape"
+            android:fontFamily="sans-serif"
+            android:onClick="taroTea"
+            android:text="Taro Milk Tea"
+            android:layout_alignBottom="@id/center"
+            android:layout_marginBottom="15dp"
+            android:textSize="36sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/center"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+
+        <Button
+            android:id="@+id/MatchaTea"
+            android:layout_width="252dp"
+            android:layout_height="121dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape"
+            android:fontFamily="sans-serif"
+            android:onClick="matchaTea"
+            android:text="Matcha\nMilk Tea"
+            android:layout_alignTop="@id/center"
+            android:layout_marginTop="15dp"
+            android:textSize="36sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/OtherTea"
+            android:layout_width="252dp"
+            android:layout_height="121dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape"
+            android:fontFamily="sans-serif"
+            android:onClick="otherTea"
+            android:text="Other"
+            android:layout_alignTop="@id/MatchaTea"
+            android:layout_marginTop="151dp"
+            android:textSize="36sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

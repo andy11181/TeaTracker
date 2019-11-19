@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".infoActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <EditText
+            android:id="@+id/type"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:layout_alignBottom="@id/cost"
+            android:layout_marginBottom="180dp"
+            android:singleLine="true"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:inputType="textAutoCorrect"
+            android:maxLength="25"
+            android:hint="Bubble Tea Name"
+            android:textColor="#C2C2C2"
+            android:backgroundTint="#C2C2C2"
+            android:textColorHint="#C2C2C2"
+            android:text="">
+        </EditText>
+
+        <EditText
+            android:id="@+id/cost"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:layout_alignBottom="@id/center"
+            android:layout_marginBottom="30dp"
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:textColor="#C2C2C2"
+            android:backgroundTint="#C2C2C2"
+            android:textColorHint="#C2C2C2"
+            android:hint="Default is 5 dollars">
+        </EditText>
+
+        <Button
+            android:id="@+id/center"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <EditText
+            android:id="@+id/calories"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:layout_alignTop="@id/center"
+            android:layout_marginTop="90dp"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:textColor="#C2C2C2"
+            android:backgroundTint="#C2C2C2"
+            android:textColorHint="#C2C2C2"
+            android:hint="Default is 300 cal">
+        </EditText>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="173dp"
+            android:layout_height="99dp"
+            android:layout_alignTop="@id/calories"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/shape"
+            android:fontFamily="sans-serif"
+            android:onClick="submit"
+            android:text="Submit"
+            android:textSize="36sp"
+            android:visibility="visible" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:fontFamily="sans-serif"
+            android:textSize="36sp"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/type"
+            android:layout_marginBottom="60dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost:"
+            android:fontFamily="sans-serif"
+            android:textSize="36sp"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/cost"
+            android:layout_marginBottom="60dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories:"
+            android:fontFamily="sans-serif"
+            android:textSize="36sp"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/calories"
+            android:layout_marginBottom="60dp">
+        </TextView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tea.teatracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/tea_icon"
+        android:label="Tea Time"
+        android:roundIcon="@mipmap/tea_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.tea.teatracker.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tea.teatracker.toAddActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.tea.teatracker.toTrackActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.tea.teatracker.infoActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.tea.teatracker.graphActivity"
+            android:label="@string/app_name">
+        </activity>
+    </application>
+
+</manifest>
